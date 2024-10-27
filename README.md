@@ -1,8 +1,8 @@
 # ScheduleWizard
 
 ## Authors
-- Maly Fertig
 - Michal Amar
+- Malka Fertig
 - Ruth Hershler
 
 ## Project Concept Background
