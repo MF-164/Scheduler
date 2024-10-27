@@ -72,7 +72,7 @@ std::shared_ptr<Task> TaskFactory::createTask(const nlohmann::json& taskData) {
 
         if (taskType == TaskType::BASIC || taskType == TaskType::ORDERED) {
             if (taskData.contains("priority") && taskData.contains("runningTime")) {
-                bool isOrdered = taskType == TaskType::ORDERED;
+                bool isOrdered = (taskType == TaskType::ORDERED);
                 return std::make_shared<Task>(
                     Scheduler::taskIds++,
                     taskData.at("priority").get<std::string>(),
